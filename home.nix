@@ -32,17 +32,6 @@
     EDITOR = "nvim";
   };
 
-  programs.git = {
-    enable = true;
-    userName = "vasili1310";
-    userEmail = "huzeacostas1345@gmail.com";
-    aliases = {
-      pu = "push";
-      co = "checkout";
-      cm = "commit";
-    };
-  };
-
   gtk = {
     enable = true;
     theme.name = "Gruvbox-Material-Dark";
