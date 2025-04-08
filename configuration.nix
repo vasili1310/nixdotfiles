@@ -85,6 +85,7 @@
     bibata-cursors
     neofetch
     tinyfetch
+    microfetch
     # Programs
     vim
     unzip
@@ -94,6 +95,7 @@
     zsh
     tmux
     pavucontrol
+    playerctl
     nwg-look
     betterdiscordctl
     blueman

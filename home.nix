@@ -1,6 +1,10 @@
 { config, pkgs, ... }:
 
 {
+  imports = [
+    /home/vasili/dotfiles/hyprland.nix
+  ];
+
   home.username = "vasili";
   home.homeDirectory = "/home/vasili";
 
@@ -54,7 +58,8 @@
     shellAliases = {
       ll = "ls -lha";
       update = "sudo nixos-rebuild switch";
-      updateh = "home-manager switch";
+      updateh = "home-manager switch --impure";
+      full-update = "sudo nixos-rebuild switch && home-manager switch --impure";
       cl = "clear";
       v = "nvim";
     };
