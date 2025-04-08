@@ -1,0 +1,2 @@
+# nixdotfiles
+My NixOS dotfiles
