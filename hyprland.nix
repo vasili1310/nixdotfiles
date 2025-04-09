@@ -191,6 +191,7 @@
           "dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP"
           "systemctl --user start hyprpolkitagent"
           "hyprsunset -t 5000"
+          "swaync"
       ];
 
       env = [

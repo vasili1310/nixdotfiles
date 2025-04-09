@@ -119,6 +119,7 @@
     hyprsunset
     hyprcursor
     hyprlock
+    swaynotificationcenter
     # Programming languages
     gcc
     libgcc
