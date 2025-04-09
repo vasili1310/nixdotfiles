@@ -30,6 +30,9 @@
     ".config/waybar" = {
       source = config.lib.file.mkOutOfStoreSymlink "/home/vasili/dotfiles/config/waybar";
     };
+    ".config/hypr/hyprpaper.conf" = {
+      source = config.lib.file.mkOutOfStoreSymlink "/home/vasili/dotfiles/config/hypr/hyprpaper.conf";
+    };
   };
 
   home.sessionVariables = {
