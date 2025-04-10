@@ -79,7 +79,6 @@
     gruvbox-gtk-theme
     gruvbox-plus-icons
     gruvbox-dark-icons-gtk
-    gruvbox-material-gtk-theme
     rose-pine-cursor
     rose-pine-hyprcursor
     bibata-cursors
@@ -103,6 +102,8 @@
     bat
     home-manager
     neovide
+    rar 
+    unrar
     # Apps
     brave
     firefox
@@ -119,18 +120,23 @@
     hyprsunset
     hyprcursor
     hyprlock
+    hyprshot
     swaynotificationcenter
     # Programming languages
     gcc
     libgcc
     python2
-    python313
+    python312Full
+    python312Packages.pip
+    pipx
     nodejs_23
     go
     rust-analyzer
     rustup
     rustc
     cargo
+    perl
+    perl540Packages.NetIP
     # Cyber
     burpsuite
     zap
@@ -139,12 +145,17 @@
     nmap
     proxychains
     ffuf
+    whois
+    dig
+    dnsenum
   ];
 
   # Allow unfree packages
   nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
     "discord"
     "burpsuite"
+    "rar"
+    "unrar"
   ];
 
   # Allow insecure packages

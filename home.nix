@@ -41,7 +41,7 @@
 
   gtk = {
     enable = true;
-    theme.name = "Gruvbox-Material-Dark";
+    theme.name = "Gruvbox-Dark";
     cursorTheme.name = "Bibata-Modern-Classic";
     iconTheme.name = "Gruvbox-Plus-Dark";
   };
