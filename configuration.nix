@@ -172,7 +172,11 @@
   services.xserver.desktopManager.gnome.enable = true;
 
   # Hyprland
-  programs.hyprland.enable = true;
+  programs.hyprland = {
+    enable = true;
+    withUWSM = true;
+  };
+  security.pam.services.hyprlock = {};
 
   # Auto delete older than 10d
   nix.gc.automatic = true;
