@@ -104,6 +104,7 @@
     neovide
     rar 
     unrar
+    htop
     # Apps
     brave
     firefox
@@ -148,6 +149,7 @@
     whois
     dig
     dnsenum
+    airgeddon
   ];
 
   # Allow unfree packages
