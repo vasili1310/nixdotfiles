@@ -41,9 +41,9 @@
 
   gtk = {
     enable = true;
-    theme.name = "Gruvbox-Dark";
+    theme.name = "Tokyonight-Dark";
     cursorTheme.name = "Bibata-Modern-Classic";
-    iconTheme.name = "Gruvbox-Plus-Dark";
+    iconTheme.name = "Dracula";
   };
 
   xdg.mimeApps.defaultApplications = {
