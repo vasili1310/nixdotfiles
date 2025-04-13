@@ -94,6 +94,7 @@
     zsh
     tmux
     pavucontrol
+    pamixer
     playerctl
     nwg-look
     betterdiscordctl
@@ -105,6 +106,8 @@
     rar 
     unrar
     htop
+    nnn
+    discordo
     # Apps
     brave
     firefox
