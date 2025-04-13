@@ -113,7 +113,7 @@
     # Apps
     brave
     firefox
-    zapzap
+    whatsie
     discord
     vlc
     github-desktop

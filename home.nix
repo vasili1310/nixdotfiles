@@ -42,7 +42,7 @@
   gtk = {
     enable = true;
     theme.name = "Tokyonight-Dark";
-    cursorTheme.name = "Bibata-Modern-Classic";
+  #   cursorTheme.name = "Bibata-Modern-Classic";
     iconTheme.name = "Dracula";
   };
 
@@ -71,7 +71,9 @@
   programs.zsh.oh-my-zsh = {
     enable = true;
     plugins = [ ];
-    theme = "robbyrussell";
+    theme = "murilasso";
+    # theme = "jtriley";
+    # theme = "robbyrussell";
     # theme = "agnoster";
   };
 
