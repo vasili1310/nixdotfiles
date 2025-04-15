@@ -111,6 +111,7 @@
     nnn
     discordo
     android-tools
+    playerctl
     # Apps
     brave
     firefox
@@ -119,6 +120,7 @@
     vlc
     github-desktop
     nemo
+    protonup-qt
     # Hyprland
     waybar
     kitty
@@ -158,12 +160,24 @@
     airgeddon
   ];
 
+  # Steam
+  programs.steam = {
+    enable = true;
+    # remotePlay.openFirewall = true; # Open ports in the firewall for Steam Remote Play
+    # dedicatedServer.openFirewall = true; # Open ports in the firewall for Source Dedicated Server
+    # localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
+  };
+
   # Allow unfree packages
   nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
     "discord"
     "burpsuite"
     "rar"
     "unrar"
+    "steam"
+    "steam-original"
+    "steam-unwrapped"
+    "steam-run"
   ];
 
   # Allow insecure packages
@@ -189,14 +203,7 @@
   # i3
   environment.pathsToLink = [ "/libexec" ]; # links /libexec from derivations to /run/current-system/sw 
   services.xserver = {
-    desktopManager = {
-      xterm.enable = false;
-    };
-   
-    displayManager = {
-        defaultSession = "none+i3";
-    };
-
+    desktopManager.xterm.enable = false;
     windowManager.i3 = {
       enable = true;
       extraPackages = with pkgs; [
@@ -207,6 +214,7 @@
      ];
     };
   };
+  services.displayManager.defaultSession = "none+i3";
 
   # Auto delete older than 10d
   nix.gc.automatic = true;

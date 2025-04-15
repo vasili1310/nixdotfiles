@@ -81,6 +81,7 @@
     protonup-qt
     lshw
     github-desktop
+    playerctl
     # Eye candy
     tokyonight-gtk-theme
     dracula-icon-theme

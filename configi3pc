@@ -65,6 +65,13 @@ bindsym $mod+d exec --no-startup-id dmenu_run
 # .desktop file. It is a wrapper around dmenu, so you need that installed.
 # bindcode $mod+40 exec --no-startup-id i3-dmenu-desktop
 
+# Adjust volume
+bindsym Ctrl+Shift+M exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+
+bindsym Ctrl+Shift+N exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+
+# Play / pause media
+bindsym Ctrl+Shift+P exec playerctl play-pause
+
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
