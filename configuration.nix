@@ -110,6 +110,7 @@
     htop
     nnn
     discordo
+    android-tools
     # Apps
     brave
     firefox
