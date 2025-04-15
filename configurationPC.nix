@@ -82,6 +82,7 @@
     lshw
     github-desktop
     playerctl
+    nautilus
     # Eye candy
     tokyonight-gtk-theme
     dracula-icon-theme
