@@ -90,6 +90,18 @@
     # Eye candy
     tokyonight-gtk-theme
     dracula-icon-theme
+    # Programming languages
+    gcc
+    libgcc
+    python312Full
+    python312Packages.pip
+    pipx
+    nodejs_23
+    go
+    rustup
+    rustc
+    rust-analyzer
+    cargo
   ];
 
   # Nvidia
