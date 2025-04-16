@@ -86,7 +86,7 @@
     lshw
     github-desktop
     playerctl
-    nautilus
+    xfce.thunar
     # Eye candy
     tokyonight-gtk-theme
     dracula-icon-theme
