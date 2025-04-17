@@ -65,6 +65,7 @@
       full-update = "sudo nixos-rebuild switch && home-manager switch --impure";
       cl = "clear";
       v = "nvim";
+      cdl = "cd && clear";
     };
   };
 
