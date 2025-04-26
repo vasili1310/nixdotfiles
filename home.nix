@@ -65,7 +65,13 @@
       full-update = "sudo nixos-rebuild switch && home-manager switch --impure";
       cl = "clear";
       v = "nvim";
+      msdir = "mkdir -p '$1' && cd '$1'";
     };
+    shellInit = ''
+      msdir() {
+          mkdir -p "$1" && cd "$1"
+      }
+    '';
   };
 
   programs.zsh.oh-my-zsh = {

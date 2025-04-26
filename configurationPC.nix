@@ -87,6 +87,10 @@
     github-desktop
     playerctl
     xfce.thunar
+    nautilus
+    android-tools
+    jmtpfs
+    gvfs
     # Eye candy
     tokyonight-gtk-theme
     dracula-icon-theme
@@ -99,9 +103,12 @@
     nodejs_23
     go
     rustup
-    rustc
-    rust-analyzer
-    cargo
+    typescript
+    # Mimetypes
+    neovide
+    evince
+    loupe
+    vlc
   ];
 
   # Nvidia
