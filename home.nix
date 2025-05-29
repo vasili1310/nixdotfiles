@@ -66,11 +66,6 @@
       cl = "clear";
       v = "nvim";
     };
-    shellInit = ''
-      msdir() {
-          mkdir -p "$1" && cd "$1"
-      }
-    '';
   };
 
   programs.zsh.oh-my-zsh = {
