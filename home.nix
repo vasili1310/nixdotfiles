@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, inputs, ... }:
 
 {
   imports = [
@@ -10,8 +10,8 @@
 
   home.stateVersion = "24.11"; # Please read the comment before changing.
 
-  home.packages = [
-
+  home.packages = with pkgs; [
+    inputs.zen-browser.packages."${system}".specific
   ];
 
   home.file = {

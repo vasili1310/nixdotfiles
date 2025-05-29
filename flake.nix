@@ -8,9 +8,10 @@
       url = "github:nix-community/home-manager";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+    zen-browser.url = "github:MarceColl/zen-browser-flake";
   };
 
-  outputs = { nixpkgs, home-manager, ... }:
+  outputs = { nixpkgs, home-manager, zen-browser, ... } @ inputs:
     let
       system = "x86_64-linux";
       pkgs = nixpkgs.legacyPackages.${system};
@@ -24,6 +25,7 @@
 
         # Optionally use extraSpecialArgs
         # to pass through arguments to home.nix
+        extraSpecialArgs = { inherit inputs; };
       };
     };
 }

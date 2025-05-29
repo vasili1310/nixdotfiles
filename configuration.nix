@@ -109,9 +109,21 @@
     unrar
     htop
     nnn
+    xfce.thunar
     discordo
     android-tools
     playerctl
+    dunst
+    flameshot
+    ifuse 
+    libimobiledevice
+    usbmuxd
+    qemu
+    quickemu
+    spotify
+    spicetify-cli
+    vscode
+    brightnessctl
     # Apps
     brave
     firefox
@@ -133,10 +145,13 @@
     swaynotificationcenter
     # Programming languages
     gcc
+    gdb
     libgcc
     python2
     python312Full
     python312Packages.pip
+    python312Packages.pycryptodome
+    python312Packages.pycrypto
     pipx
     nodejs_23
     go
@@ -158,6 +173,14 @@
     dig
     dnsenum
     airgeddon
+    autopsy
+    exiftool
+    wireshark
+    ghidra-bin
+    ida-free
+    file
+    radare2
+    wabt
   ];
 
   # Tor
@@ -185,6 +208,10 @@
     # localNetworkGameTransfers.openFirewall = true; # Open ports in the firewall for Steam Local Network Game Transfers
   };
 
+  # VirtualBox
+  virtualisation.virtualbox.host.enable = true;
+  users.extraGroups.vboxusers.members = [ "vasili" ];
+
   # Allow unfree packages
   nixpkgs.config.allowUnfreePredicate = pkg: builtins.elem (lib.getName pkg) [
     "discord"
@@ -195,7 +222,14 @@
     "steam-original"
     "steam-unwrapped"
     "steam-run"
+    "spotify"
+    "ida-free"
+    "vscode"
+    "arc-browser"
   ];
+
+  # Allow unsupported packages
+  nixpkgs.config.allowUnsupportedSystem = true;
 
   # Allow insecure packages
   nixpkgs.config.permittedInsecurePackages = [
